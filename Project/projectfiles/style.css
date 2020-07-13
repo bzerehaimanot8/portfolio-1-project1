@@ -1,0 +1,55 @@
+    * {
+        border: 1px solid black;
+    }
+    
+    body {
+        background-color: grey;
+        /*experimenting w/ hamburger*/
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; */
+    }
+    
+    .container1 {
+        background-color: rgb(3, 143, 153);
+        height: 50px;
+    }
+    
+    .a {
+        color: white;
+        height: 50px;
+    }
+    /* .menu-button {
+        position: relative;
+        display:
+    } */
+    
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: grey;
+        height: 100px;
+    }
+    
+    .pic {
+        background-color: grey;
+        height: 80px;
+        width: 80px;
+        /*supposed to upload all media using json*/
+        background-image: url("https://res.cloudinary.com/dfmeqlgua/image/upload/v1594670284/Besrat_Professional_Pic_bcwia4.jpg");
+        background-size: cover;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .nameandposition {
+        font-size: 5px;
+        height: 5px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
