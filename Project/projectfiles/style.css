@@ -4,11 +4,6 @@
     
     body {
         background-color: grey;
-        /*experimenting w/ hamburger*/
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh; */
     }
     
     .container1 {
@@ -20,10 +15,6 @@
         color: white;
         height: 50px;
     }
-    /* .menu-button {
-        position: relative;
-        display:
-    } */
     
     .container2 {
         display: flex;
@@ -31,7 +22,7 @@
         align-items: center;
         flex-direction: column;
         background-color: grey;
-        height: 100px;
+        height: 200px;
     }
     
     .pic {
@@ -48,8 +39,17 @@
     .nameandposition {
         font-size: 5px;
         height: 5px;
+        color: white;
     }
     
     h2 {
         font-size: 15px;
+    }
+    
+    .container3 {
+        height: 100px;
+    }
+    
+    .container4 {
+        height: 100px;
     }
