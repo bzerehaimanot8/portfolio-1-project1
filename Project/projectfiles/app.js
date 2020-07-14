@@ -34,11 +34,12 @@ const app = (data) => {
             $div.append($('<p>').text(project.description))
             $div.append($('<img>').attr('src', project.image))
             $div.append($('<a>').attr('href', project.url).text('link'))
+            $('main').append($div)
             return $div
         }
         // $('body').append(createProjectElement(data[0]))
     data.forEach(project => {
         const $projectDiv = createProjectElement(project)
-        $('body').append($projectDiv)
+        $('main').append($projectDiv)
     })
 }
