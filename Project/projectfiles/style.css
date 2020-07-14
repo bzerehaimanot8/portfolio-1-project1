@@ -9,6 +9,21 @@
     .container1 {
         background-color: rgb(3, 143, 153);
         height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 8px;
     }
     
     .a {
@@ -27,8 +42,8 @@
     
     .pic {
         background-color: grey;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
         /*supposed to upload all media using json*/
         background-image: url("https://res.cloudinary.com/dfmeqlgua/image/upload/v1594670284/Besrat_Professional_Pic_bcwia4.jpg");
         background-size: cover;
@@ -37,9 +52,19 @@
     }
     
     .nameandposition {
-        font-size: 5px;
-        height: 5px;
+        font-size: 8px;
         color: white;
+        text-align: center;
+    }
+    
+    hr {
+        border: 1px solid silver;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 10px;
+        margin: 0;
     }
     
     h2 {
