@@ -43,3 +43,7 @@ const app = (data) => {
         $('main').append($projectDiv)
     })
 }
+
+// const $contact = $('<div>')
+// ($contact).addClass('contact')
+// $('main').append($contact)
