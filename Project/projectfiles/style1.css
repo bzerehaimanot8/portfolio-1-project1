@@ -1,3 +1,5 @@
+*{ border: 1px solid black;}
+
 body {
   background-color: grey;
   font-family: sans-serif;
@@ -81,13 +83,13 @@ h4 {
 
 h2 {
   font-size: 15px;
-  background-color: rgb(2, 55, 90);
+  /* background-color: rgb(2, 55, 90); */
   color: white;
 }
 
 p {
   font-size: 8px;
-  background-color: rgb(2, 55, 90);
+  /* background-color: rgb(2, 55, 90); */
   color: white;
 }
 
@@ -97,16 +99,26 @@ div {
   /* transition: width 2s, height 2s,  transform 2s; */
 }
 
-img {
-  transition: width 2s, height 2s, transform 2s;
+a{
+color: white;
+font-size: smaller;
 }
 
 
-img:hover {
+
+ img {
+  /* transition: width 2s, height 2s,
+    transform 2s; */
+background-size: cover;
+border-radius: 3px;
+} 
+
+
+/* img:hover {
   width: 250px;
   height 250px;
   transform: rotate(360deg);
-}
+} */
 
 .container3 {
   height: 150px;
@@ -114,14 +126,16 @@ img:hover {
 }
 
 main {
-  height: 500px;
+  height: 1800px;
   background-color: rgb(2, 55, 90);
   text-align: center;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
   margin: 0 auto;
+
 
 
   /* display: grid;
@@ -148,7 +162,7 @@ main h1 {
 }
 
 .contact-form {
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -281,6 +295,18 @@ main h1 {
     right: 0;
     position: absolute;
   }
+
+.social {
+display: flex;
+justify-content: space-between;
+background-color: rgb(2, 55, 90);
+height: 50px;
+border-radius: 2px;
+width: 300px;
+margin right: 5px;
+/* padding: 5px;  */
+
+}
 
   /* .project {
 display: grid;
