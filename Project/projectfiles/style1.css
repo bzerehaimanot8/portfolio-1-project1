@@ -4,6 +4,8 @@ body {
   background-color: grey;
   font-family: sans-serif;
   height: 1750px;
+position: relative;
+min-height: 100vh;
 }
 
 .container1 {
@@ -298,14 +300,38 @@ main h1 {
 
 .social {
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
+align-items: center;
 background-color: rgb(2, 55, 90);
 height: 50px;
 border-radius: 2px;
-width: 300px;
-margin right: 5px;
+width: 330px;
+margin: 0px;
+/* position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem; */
 /* padding: 5px;  */
 
+}
+
+.github{
+height: 34px;
+width: 34px;
+background-color: white;
+border-radius: 25px;
+background-image: url("https://cdn3.iconfinder.com/data/icons/inficons/512/github.png");
+background-size: cover;
+margin-right: 8px;
+}
+.linkedin{
+height: 34px;
+width: 34px;
+background-color: white;
+border-radius: 25px;
+background-image: url("https://img.favpng.com/17/11/18/linkedin-social-media-computer-icons-youtube-logo-png-favpng-JGv2GD2EFAppXeGGHgHNi1Pgp.jpg");
+background-size: cover;
+margin-left: -10px;
 }
 
   /* .project {
