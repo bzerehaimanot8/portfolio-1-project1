@@ -29,7 +29,7 @@ const app = (data) => {
 
     const createProjectElement = (project) => {
             const $div = $('<div>')
-                $('div').addClass('project')
+                $div.addClass('project')
             $div.append($('<h2>').text(project.title))
             $div.append($('<p>').text(project.description))
             $div.append($('<img>').attr('src', project.image))
