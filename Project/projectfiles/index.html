@@ -10,8 +10,9 @@
             width: 300px;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style1.css">
     <script type="text/javascript" src="app.js" defer></script>
 </head>
 
@@ -19,18 +20,34 @@
     <div class="container1">
 
         <div class="a"><strong>Welcome</strong></div>
-        <div class="burger-menu">
-            <nav>
-                <ul>
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-
-                </ul>
-            </nav>
-
+        <div id="menu-bar" onclick="onClickMenu()">
+            <div id="menu">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#proj">Projects</a></li>
+                <li><a href="#con">Contact Me</a></li>
+            </ul>
         </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <!-- <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav> -->
     </div>
+
     <div class="container2">
         <div class="pic"></div>
         <div class="nameandposition">
@@ -39,14 +56,20 @@
             <h3>Web Developer</h3>
         </div>
     </div>
-    <div class="container3">
+    <div class="container3" id="about">
         <h3>About Me</h3>
         <hr>
-        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsam vel voluptatum dolor tempore eum ad neque? Sit officiis eius delectus consequatur quasi totam, dolorum inventore eos quae quis? Reiciendis.</h4>
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ipsam vel voluptatum dolor tempore eum ad
+            neque? Sit officiis eius delectus consequatur quasi totam, dolorum inventore eos quae quis? Reiciendis.
+        </h4>
     </div>
-    <main></main>
 
-    <div class="contact-form">
+    <main id="proj">
+        <h1>Projects</h1>
+        <hr>
+    </main>
+
+    <div class="contact-form" id="con">
         <div class="content">
             <h1>Contact Form</h1>
             <p>Connect with me</p>

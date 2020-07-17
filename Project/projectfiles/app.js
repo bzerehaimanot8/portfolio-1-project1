@@ -29,7 +29,7 @@ const app = (data) => {
 
     const createProjectElement = (project) => {
             const $div = $('<div>')
-                // $('div').addClass('project')
+                $('div').addClass('project')
             $div.append($('<h2>').text(project.title))
             $div.append($('<p>').text(project.description))
             $div.append($('<img>').attr('src', project.image))
@@ -44,6 +44,33 @@ const app = (data) => {
     })
 }
 
+function onClickMenu(){
+document.getElementById("menu").classList.toggle("change");
+document.getElementById("nav").classList.toggle("change");
+document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+// const $li = $('<li>'); $li.text('About Me'); $ul.prepend($li); $li.click(function() {
+//     //alert('You clicked About Me') -> test
+//     window.scrollBy(0,350)
+// });
+
+
+function scrollWin(x,y) {
+window.scrollBy(0, 500);
+}
+
 // const $contact = $('<div>')
 // ($contact).addClass('contact')
 // $('main').append($contact)
+
+// const hamburger = document.querySelector(".hamburger");
+// const navLinks = document.querySelector(".nav-links");
+// const links = document.querySelectorAll(".nav-links li");
+
+// hamburger.addEventListener("click", () => {
+//     navLinks.classList.toggle("open");
+//     links.forEach(link => {
+//         link.classList.toggle("fade");
+//     });
+// });
