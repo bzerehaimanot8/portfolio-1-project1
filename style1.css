@@ -181,6 +181,7 @@ main {
   flex-direction: column;
   border-radius: 0px;
   margin: 0 auto;
+  /* width: 100%; */
 
 
 
@@ -582,13 +583,6 @@ textarea:hover {
 }
 
 
-
-/* .project {
-display: grid;
-width: 140;
-height: 
-} */
-
 @media (min-width: 460px) {
   .container1 {
     display: flex;
@@ -612,8 +606,35 @@ height:
   #menu-bar {
     width: 270px;
   }
+
+  .project {
+
+  }
 }
 
+@media (min-width: 680px) {
+
+  #proj {
+    display: grid;
+    height: 900px;
+    width: 712px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+.project {
+/* display: flex;
+justify-content: space-evenly; */
+height: 300px;
+width: 330;
+}
+
+
+
+
+}
 
 
 
