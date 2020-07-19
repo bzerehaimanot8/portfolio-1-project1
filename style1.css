@@ -3,22 +3,22 @@
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .title {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-color: white;
-height: 39px;
-background-color: rgb(2, 55, 90);
-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 39px;
+  background-color: rgb(2, 55, 90);
+  width: 100%;
 }
 
 h1 {
-font-size: 17px;
+  font-size: 17px;
 }
 
 body {
@@ -50,7 +50,9 @@ rgb(148, 148, 148) */
   height: 15px;
 }
 
-
+.tab {
+  opacity: 0;
+}
 
 /* nav {
   display: flex;
@@ -110,7 +112,7 @@ rgb(148, 148, 148) */
 hr {
   border: 1px solid silver;
   width: 274px;
-height: 1px;
+  height: 1px;
 }
 
 h3 {
@@ -368,20 +370,20 @@ main {
 }
 
 .top {
-height: 5px;
-padding: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-background-color: rgb(2, 55, 90);
-border-radius: 10px;
+  background-color: rgb(2, 55, 90);
+  border-radius: 10px;
 }
 
 button a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .social {
@@ -520,7 +522,7 @@ textarea:hover::focus:-ms-placeholder {
 
 .contact-form {
 
-background: #d8d3cf;
+  background: #d8d3cf;
 
 
   color: #aaa19a;
