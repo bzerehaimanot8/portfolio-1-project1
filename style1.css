@@ -13,6 +13,7 @@ html {
   flex-direction: column;
   color: white;
   height: 39px;
+  padding-top: 10px;
   background-color: rgb(2, 55, 90);
   width: 100%;
 }
@@ -88,6 +89,7 @@ rgb(148, 148, 148) */
   height: 400px;
   background-image: url('https://res.cloudinary.com/dfmeqlgua/image/upload/v1594786323/nyc1_d0gnxk.jpg');
   background-size: cover;
+background-position: center; 
 
 }
 
@@ -168,10 +170,9 @@ img {
 }
 
 
-/* img:hover {
-  width: 250px;
-  height 250px;
-  transform: rotate(360deg);
+ /* img:hover {
+  width: 280px;
+  height 170px;
 } */
 
 .container3 {
