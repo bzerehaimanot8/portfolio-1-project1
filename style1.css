@@ -172,7 +172,7 @@ img {
 
 
 main {
-  height: 1800px;
+  height: 100%;
   background-color: rgb(2, 55, 90);
   text-align: center;
   display: flex;
@@ -331,6 +331,15 @@ main h1 {
   top: 0;
   right: 0;
   position: absolute;
+}
+
+#proj {
+
+height: 100%;
+width: 100%;
+
+
+
 }
 
 .social {
@@ -607,26 +616,21 @@ textarea:hover {
     width: 270px;
   }
 
-  .project {
-
-  }
+  
 }
 
 @media (min-width: 680px) {
 
   #proj {
     display: grid;
-    height: 900px;
-    width: 712px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0fr);
+    grid-template-columns: repeat(2, 0fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 1000px;
   }
 
 .project {
-/* display: flex;
-justify-content: space-evenly; */
 height: 300px;
 width: 330;
 }
