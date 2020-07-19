@@ -365,9 +365,23 @@ main {
 
   height: 100%;
   width: 100%;
+}
 
+.top {
+height: 5px;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+button {
+background-color: rgb(2, 55, 90);
+border-radius: 10px;
+}
 
+button a {
+text-decoration: none;
 }
 
 .social {
