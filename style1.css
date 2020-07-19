@@ -2,6 +2,25 @@
   border: 1px solid black;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+.title {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+height: 39px;
+background-color: rgb(2, 55, 90);
+width: 100%;
+}
+
+h1 {
+font-size: 17px;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background: #e2dedb;
@@ -67,6 +86,7 @@ rgb(148, 148, 148) */
   height: 400px;
   background-image: url('https://res.cloudinary.com/dfmeqlgua/image/upload/v1594786323/nyc1_d0gnxk.jpg');
   background-size: cover;
+
 }
 
 .pic {
@@ -90,6 +110,7 @@ rgb(148, 148, 148) */
 hr {
   border: 1px solid silver;
   width: 274px;
+height: 1px;
 }
 
 h3 {
@@ -166,7 +187,7 @@ img {
   border-radius: 0px;
   /* width: 300px; */
   height: 200px;
-  /* width: 100%; */
+  width: 100%;
 
 }
 
@@ -192,10 +213,17 @@ main {
   grid-template-columns: repeat(3, 1fr);  */
 }
 
-main h1 {
+/* main h1 {
   color: white;
   font-size: 17px;
+} */
+
+.project {
+
+  display: flex;
+  flex-direction: column;
 }
+
 
 /* .form {
   display: flex;
@@ -478,7 +506,9 @@ textarea:hover::focus:-ms-placeholder {
 
 .contact-form {
 
-  background: #d8d3cf;
+background: #d8d3cf;
+
+
   color: #aaa19a;
   /* background-color: #cbc6c1; */
 
@@ -502,7 +532,8 @@ header {
   display: flex;
   justify-content: center;
   position: ;
-  width: 280px;
+  /* width: 280px; */
+  width: 100%;
   padding: 0px 0px 0px 0px;
   margin: 100px 0 25px 0;
   font-size: 24px;
@@ -512,7 +543,8 @@ header {
 
 .form {
   position: relative;
-  width: 280px;
+  width: 100%;
+  /* width: 280px; */
   margin: 50px auto 100px auto;
   color: #aaa19a;
 }
@@ -520,7 +552,8 @@ header {
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 248px;
+  /* width: 248px; */
+  width: 100%;
   height: 50px;
   padding: 0px 15px 0px 15px;
 
@@ -543,8 +576,9 @@ input:hover {
 }
 
 textarea {
-  width: 263px;
-  max-width: 280px;
+  /* width: 263px; */
+  width: 100%;
+  /* max-width: 280px; */
   height: 90px;
   max-height: 90px;
   padding: 15px 0px 0px 15px;
@@ -570,7 +604,8 @@ textarea:hover {
 }
 
 #submit {
-  width: 280px;
+  /* width: 280px; */
+  width: 100%;
   height: 50px;
 
   padding: 0;
