@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 body {
@@ -20,7 +20,6 @@ rgb(148, 148, 148) */
 .container1 {
   background-color: rgb(2, 55, 90);
   height: 50px;
-  /* min-width: 460px; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -54,6 +53,9 @@ rgb(148, 148, 148) */
   color: white;
   height: 50px;
   font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  margin: 8px;
 }
 
 .container2 {
@@ -230,9 +232,8 @@ main h1 {
 #menu {
   width: 35px;
   height: 30px;
-  margin: 30px 0 20px 20px;
+  margin: 15px 8px 20px 20px;
   cursor: pointer;
-  margin-top: 8px;
 }
 
 .bar {
@@ -272,7 +273,7 @@ main h1 {
 .nav li a {
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .nav li a:hover {
@@ -286,11 +287,12 @@ main h1 {
 
 .nav {
   padding: 0;
-  margin: 0 0px;
+  margin: 8px;
   transition: 0.3s ease;
   display: flex;
-  justify-content: space-around;
-  width: 85px;
+  justify-content: space-between;
+  width: 250px;
+  ;
   /* visibility: hidden; */
   display: none;
 }
@@ -313,6 +315,8 @@ main h1 {
   z-index: 2;
   margin-right: 18px;
   margin-top: 15px;
+  width: 54px;
+
 }
 
 .change-bg {
@@ -330,7 +334,7 @@ main h1 {
 
 .social {
   display: flex;
-  justify-content: space-aroundgit;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(2, 55, 90);
   height: 50px;
@@ -596,7 +600,17 @@ height:
   }
 
   .nav {
-    visibility: hidden;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-bg {
+    display: none;
+  }
+
+  #menu-bar {
+    width: 270px;
   }
 }
 
