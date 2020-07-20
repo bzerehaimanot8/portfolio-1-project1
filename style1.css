@@ -180,6 +180,9 @@ display: flex;
 flex-direction: column;
 }
 
+
+/*  lines 186-284 involve code surrounding my hamburger menu, which is heavily influenced by what i learned my Abarna, a coder on youtube */
+
 /* the id containing the 3 divs that make up my hamburger menu */
 #menu {
   width: 35px;
