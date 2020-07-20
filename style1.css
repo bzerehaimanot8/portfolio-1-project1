@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 /* enables smooth scrolling effect */
@@ -20,7 +20,7 @@ html {
   width: 100%;
 }
 
-
+/* name and projects title*/
 h1 {
   font-size: 17px;
 }
@@ -34,7 +34,7 @@ body {
   margin: 10px 10px;
 }
 
-/* header with navigation/hamburger menu */
+/* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced */
 .container1 {
   background-color: rgb(2, 55, 90);
   height: 50px;
@@ -51,7 +51,7 @@ body {
   opacity: 0;
 }
 
-/* div containing the "welcome" banner*/
+/* div containing the "welcome" banner. used flex-start to keep it on the left-most side of page*/
 .a {
   color: white;
   height: 50px;
@@ -75,8 +75,8 @@ body {
 
 }
 
+/* profile photo */
 .pic {
-  background-color: grey;
   height: 120px;
   width: 120px;
   background-image: url('https://res.cloudinary.com/dfmeqlgua/image/upload/v1594670284/Besrat_Professional_Pic_bcwia4.jpg');
@@ -85,6 +85,7 @@ body {
   border-radius: 5px;
 }
 
+/* styling of the class containing my name and aspiring job title */
 .nameandposition {
   font-size: 8px;
   color: white;
@@ -93,6 +94,7 @@ body {
   height: 50px;
 }
 
+/* styling of all horizontal lines following major headings on my page*/
 hr {
   border: 1px solid silver;
   width: 274px;
@@ -105,8 +107,10 @@ h3 {
   color: white;
 }
 
+/* the styling of the paragraph tag inside the about me section */
 .innerbox p {
-  text-indent: 50px;;
+  text-indent: 50px;
+  ;
   color: white;
   font-size: 10px;
   width: 90%;
@@ -121,21 +125,12 @@ h5 {
 
 h2 {
   font-size: 15px;
-  /* background-color: rgb(2, 55, 90); */
   color: white;
 }
 
 p {
   font-size: 8px;
-  /* background-color: rgb(2, 55, 90); */
   color: white;
-}
-
-div {
-  height: 250px;
-  padding: 0px;
-  /* background-color: #cbc6c1; */
-  /* transition: width 2s, height 2s,  transform 2s; */
 }
 
 a {
@@ -143,14 +138,10 @@ a {
   font-size: smaller;
 }
 
-
-
-img {
-  /* transition: width 2s, height 2s,
-    transform 2s; */
+/* img {
   background-size: cover;
-  border-radius: 3px;
-}
+  border-radius: 0px;
+} */
 
 
 /* img:hover {
@@ -158,6 +149,7 @@ img {
   height 170px;
 } */
 
+/* container with my about me elements*/
 .container3 {
   height: 220px;
   margin-top: 10px;
@@ -165,19 +157,10 @@ img {
   display: flex;
   justify-content: center;
   width: 100%;
-
+background-color: rgb(148, 148, 148);
 }
 
-.innerbox {
-  background-color: rgb(148, 148, 148);
-  border-radius: 0px;
-  /* width: 300px; */
-  height: 220px;
-  width: 100%;
-
-}
-
-
+/* the div containing my projects section. used flexbox so that each project is stacked on mobile view */
 main {
   height: 100%;
   background-color: rgb(2, 55, 90);
@@ -188,69 +171,23 @@ main {
   flex-direction: column;
   border-radius: 0px;
   margin: 0 auto;
-  /* width: 100%; */
-
-
-
-  /* display: grid;
-   width: 300px;
-  height: 140px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);  */
 }
 
-/* main h1 {
-  color: white;
-  font-size: 17px;
-} */
 
+/* the class containing all the divs each project resides in  */
 .project {
-
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
-
-/* .form {
-  display: flex;
-  justify-content: center;
-  align-items: space-between;
-  flex-direction: column;
-  width: 100%;
-  margin: 25px 0;
-  min-height: 10px 0;
-  height: 300px;
-} */
-
-
-/* .form input[type="text"],
-.form textarea {
-  //missing code here
-}  */
-
-/* .form input: focus,
-.form textarea: focus {
-  border-color: blue;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125) 0 0 8px rgba(76, 161, 175, 0.5);
-} */
-
-/* .content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 10px 10px;
-  font-size: 10px;
-  color: white;
-} */
-
+/* the id containing the 3 divs that make up my hamburger menu */
 #menu {
   width: 35px;
   height: 30px;
   margin: 15px 8px 20px 20px;
   cursor: pointer;
 }
-
+/* the class manipulating the bar on the hamburger menu so that they look the way they do*/
 .bar {
   height: 5px;
   width: 100%;
@@ -259,27 +196,27 @@ main {
   border-radius: 5px;
   transition: 0.3s ease;
 }
-
+/* copies and translates the bar shape 4px up */
 #bar1 {
   transform: translateY(-4px);
 }
-
+/* copies and translates the bar shape 4px down */
 #bar3 {
   transform: translateY(4px);
 }
-
+/* the change class it was allows the bar elements to change colors once it turns into "x" after being clicked*/
 .change .bar {
   background-color: rgb(168, 167, 167);
 }
-
+/* this is what allowed bar1 to rotate -45degrees */
 .change #bar1 {
   transform: translateY(4px) rotateZ(-45deg);
 }
-
+/* this is what allowed bar3 to rotate 45 degrees and make an "x" with bar1*/
 .change #bar3 {
   transform: translateY(-6px) rotate(45deg);
 }
-
+/* where bar2 becomes opaque so that we have our "x" */
 .change #bar2 {
   opacity: 0;
 }
@@ -290,7 +227,7 @@ main {
   text-decoration: none;
   font-size: 12px;
 }
-
+/* what allows my nav menu items to turn bold when hovered my the mouse */
 .nav li a:hover {
   font-weight: bold;
 }
@@ -299,7 +236,7 @@ main {
   list-style: none;
   padding: 8px 0;
 }
-
+/* what allowed my nav menu items to have that transition effect when in hamburger menu mode and also what allowed my nav items to disappear when on mobile view */
 .nav {
   padding: 0;
   margin: 8px;
@@ -307,15 +244,13 @@ main {
   display: flex;
   justify-content: space-between;
   width: 250px;
-  ;
-  /* visibility: hidden; */
   display: none;
 }
 
 .change {
   display: block;
 }
-
+/* the menu background that protudes out when clicking on the hamburger menu,the z-index is what allows this to happen in sequence */
 .menu-bg {
   z-index: 1;
   width: 0;
@@ -325,7 +260,7 @@ main {
   border-radius: 50%;
   transition: 0.3s ease;
 }
-
+/* this is what allowed the menu to almost immediately follow the menu background */
 #menu-bar {
   z-index: 2;
   margin-right: 18px;
@@ -333,7 +268,7 @@ main {
   width: 54px;
 
 }
-
+/* what allows the menu background to grow into a circle in the way it does */
 .change-bg {
   width: 300px;
   height: 300px;
@@ -348,7 +283,6 @@ main {
 }
 
 #proj {
-
   height: 100%;
   width: 100%;
 }
@@ -359,18 +293,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: rgb(148, 148, 148);
+  background-color: rgb(148, 148, 148);
 }
-
+/* scroll up button the bottom of the page */
 button {
   background-color: rgb(2, 55, 90);
   border-radius: 10px;
 }
-
 button a {
   text-decoration: none;
 }
 
+/* what allows the social icons on the bottom of the page to be spaced out the way they are and look the way they do*/
 .social {
   display: flex;
   justify-content: space-around;
@@ -380,14 +314,8 @@ button a {
   border-radius: 2px;
   width: 100%;
   margin: 0px;
-  /* position: absolute;
-bottom: 0;
-width: 100%;
-height: 2.5rem; */
-  /* padding: 5px;  */
-
 }
-
+/* github icon */
 .github {
   height: 35px;
   width: 35px;
@@ -397,7 +325,7 @@ height: 2.5rem; */
   background-size: cover;
   margin-right: 8px;
 }
-
+/* linkedin icon */
 .linkedin {
   height: 35px;
   width: 35px;
@@ -407,6 +335,7 @@ height: 2.5rem; */
   background-size: cover;
 }
 
+/* the styling of the contact form which is heavily influenced by what i learned in the following youtube video: https://www.youtube.com/watch?time_continue=18&v=0ZobsvqYA94&feature=emb_logo */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
@@ -424,7 +353,7 @@ textarea:focus::-webkit-input-placeholder {
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:focus::-moz-placeholder,
@@ -435,7 +364,7 @@ textarea:focus::-moz-placeholder {
 input::placeholder,
 textarea::placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:focus::placeholder,
@@ -446,7 +375,7 @@ textarea::focus:placeholder {
 input::-ms-placeholder,
 textarea::-ms-placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:focus::-ms-placeholder,
@@ -459,7 +388,7 @@ textarea:focus::-ms-placeholder {
 input:hover::-webkit-input-placeholder,
 textarea:hover::-webkit-input-placeholder {
   color: #e2dedb;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:hover:focus::-webkit-input-placeholder,
@@ -470,7 +399,7 @@ textarea:hover:focus::-webkit-input-placeholder {
 input:hover::-moz-placeholder,
 textarea:hover::-moz-placeholder {
   color: #e2dedb;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:hover:focus::-moz-placeholder,
@@ -481,7 +410,7 @@ textarea:hover:focus::-moz-placeholder {
 input:hover::placeholder,
 textarea:hover::placeholder {
   color: #e2dedb;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:hover:focus::placeholder,
@@ -492,7 +421,7 @@ textarea:hover:focus::placeholder {
 input:hover::placeholder,
 textarea:hover::placeholder {
   color: #e2dedb;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 input:hover:focus::-ms-placeholder,
@@ -500,10 +429,6 @@ textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-/* body {
-  font-family: 'Lato', sans-serif;
-  background: #e2dedb;
-} */
 
 .contact-form {
 
@@ -512,27 +437,16 @@ textarea:hover::focus:-ms-placeholder {
 
   color: #e7e1dd;
   /* background-color: #cbc6c1; */
-
-
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* width: 95%;
-  max-width: 680px;
-  margin: 100px auto 0;
-  padding: 30px;
-  box-sizing: border-box;
-  background-color: rgb(148, 148, 148);
-  border-radius: 5px;  */
-
 }
 
 header {
   display: flex;
   justify-content: center;
-  position: ;
   /* width: 280px; */
   width: 100%;
   padding: 0px 0px 0px 0px;
@@ -628,6 +542,8 @@ textarea:hover {
 }
 
 
+
+/* the media query conditions set for a screen size between 460 and 680 px" */
 @media (min-width: 460px) {
   .container1 {
     display: flex;
@@ -654,15 +570,14 @@ textarea:hover {
 
 
 }
-
+/* the media query conditions for screen sizes between 680 and 980 px, which concerns the grid layout in the projects section*/
 @media (min-width: 680px) {
 
   #proj {
     display: grid;
     grid-template-rows: repeat(3, 0fr);
     grid-template-columns: repeat(2, 0fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+
     height: 1000px;
   }
 
@@ -671,36 +586,16 @@ textarea:hover {
     width: 330;
   }
 
-
-
-
 }
 
+/* the media query conditions for screen sizes above 980px, which also concerns the grid layout in the projects sections*/
 @media (min-width: 980px) {
 
   #proj {
     display: grid;
     grid-template-rows: repeat(2, 0fr);
     grid-template-columns: repeat(3, 0fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     height: 600px;
   }
 
-  /* .project {
-height: 300px;
-width: 330; */
-}
-
-
-
-
-}
-
-
-
-@media screen and (max-width: 460px) {
-  .contact-form {
-    margin: 25px auto 0;
-  }
 }
