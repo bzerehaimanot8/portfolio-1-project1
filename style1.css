@@ -32,14 +32,15 @@ body {
 
 /* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced. rgb(2, 55, 90) */
 
-.container1 {
+.container1, #bigmac {
   background-color: rgb(8, 44, 66);
   height: 35px;
-  width: 877px;
+  /* width: 877px; */
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  position: fixed;
+  /* position: fixed; */
   border: 1px solid silver;
 
 
@@ -61,7 +62,7 @@ body {
   display: flex;
   justify-content: flex-start;
   margin: 8px;
-position: fixed;
+  /* position: fixed; */
 }
 
 /* background photo w/ my name and aspiring job title*/
@@ -262,7 +263,7 @@ main {
   justify-content: space-between;
   width: 250px;
   display: none;
-  position: fixed;
+  /* position: fixed; */
 }
 
 
