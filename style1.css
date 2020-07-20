@@ -1,4 +1,3 @@
-
 /* enables smooth scrolling effect */
 html {
   scroll-behavior: smooth;
@@ -13,7 +12,7 @@ html {
   color: white;
   height: 39px;
   padding-top: 10px;
-  background-color: rgb(2, 55, 90);
+  background-color: rgb(8, 44, 66);
   width: 100%;
 }
 
@@ -31,13 +30,19 @@ body {
   margin: 10px 10px;
 }
 
-/* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced */
+/* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced. rgb(2, 55, 90) */
+
 .container1 {
-  background-color: rgb(2, 55, 90);
-  height: 50px;
+  background-color: rgb(8, 44, 66);
+  height: 35px;
+  width: 877px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  position: fixed;
+  border: 1px solid silver;
+
+
 }
 
 #biz {
@@ -56,6 +61,7 @@ body {
   display: flex;
   justify-content: flex-start;
   margin: 8px;
+position: fixed;
 }
 
 /* background photo w/ my name and aspiring job title*/
@@ -154,13 +160,13 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-background-color: rgb(148, 148, 148);
+  background-color: rgb(148, 148, 148);
 }
 
 /* the div containing my projects section. used flexbox so that each project is stacked on mobile view */
 main {
   height: 100%;
-  background-color: rgb(2, 55, 90);
+  background-color: rgb(8, 44, 66);
   text-align: center;
   display: flex;
   justify-content: space-evenly;
@@ -173,8 +179,8 @@ main {
 
 /* the class containing all the divs each project resides in  */
 .project {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -187,6 +193,7 @@ flex-direction: column;
   margin: 15px 8px 20px 20px;
   cursor: pointer;
 }
+
 /* the class manipulating the bar on the hamburger menu so that they look the way they do*/
 .bar {
   height: 5px;
@@ -196,26 +203,32 @@ flex-direction: column;
   border-radius: 5px;
   transition: 0.3s ease;
 }
+
 /* copies and translates the bar shape 4px up */
 #bar1 {
   transform: translateY(-4px);
 }
+
 /* copies and translates the bar shape 4px down */
 #bar3 {
   transform: translateY(4px);
 }
+
 /* the change class it was allows the bar elements to change colors once it turns into "x" after being clicked*/
 .change .bar {
   background-color: rgb(168, 167, 167);
 }
+
 /* this is what allowed bar1 to rotate -45degrees */
 .change #bar1 {
   transform: translateY(4px) rotateZ(-45deg);
 }
+
 /* this is what allowed bar3 to rotate 45 degrees and make an "x" with bar1*/
 .change #bar3 {
   transform: translateY(-6px) rotate(45deg);
 }
+
 /* where bar2 becomes opaque so that we have our "x" */
 .change #bar2 {
   opacity: 0;
@@ -227,15 +240,19 @@ flex-direction: column;
   text-decoration: none;
   font-size: 12px;
 }
+
 /* what allows my nav menu items to turn bold when hovered my the mouse */
 .nav li a:hover {
   font-weight: bold;
+  /* background-color: #ddd;
+  color: black; */
 }
 
 .nav li {
   list-style: none;
   padding: 8px 0;
 }
+
 /* what allowed my nav menu items to have that transition effect when in hamburger menu mode and also what allowed my nav items to disappear when on mobile view */
 .nav {
   padding: 0;
@@ -245,11 +262,15 @@ flex-direction: column;
   justify-content: space-between;
   width: 250px;
   display: none;
+  position: fixed;
 }
+
+
 
 .change {
   display: block;
 }
+
 /* the menu background that protudes out when clicking on the hamburger menu,the z-index is what allows this to happen in sequence */
 .menu-bg {
   z-index: 1;
@@ -260,6 +281,7 @@ flex-direction: column;
   border-radius: 50%;
   transition: 0.3s ease;
 }
+
 /* this is what allowed the menu to almost immediately follow the menu background */
 #menu-bar {
   z-index: 2;
@@ -268,6 +290,7 @@ flex-direction: column;
   width: 54px;
 
 }
+
 /* what allows the menu background to grow into a circle in the way it does */
 .change-bg {
   width: 300px;
@@ -295,11 +318,13 @@ flex-direction: column;
   align-items: center;
   background-color: rgb(148, 148, 148);
 }
+
 /* scroll up button the bottom of the page */
 button {
-  background-color: rgb(2, 55, 90);
+  background-color: rgb(8, 44, 66);
   border-radius: 10px;
 }
+
 button a {
   text-decoration: none;
 }
@@ -309,12 +334,13 @@ button a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(2, 55, 90);
+  background-color: rgb(8, 44, 66);
   height: 50px;
   border-radius: 2px;
   width: 100%;
   margin: 0px;
 }
+
 /* github icon */
 .github {
   height: 35px;
@@ -325,6 +351,7 @@ button a {
   background-size: cover;
   margin-right: 8px;
 }
+
 /* linkedin icon */
 .linkedin {
   height: 35px;
@@ -570,6 +597,7 @@ textarea:hover {
 
 
 }
+
 /* the media query conditions for screen sizes between 680 and 980 px, which concerns the grid layout in the projects section*/
 @media (min-width: 680px) {
 
