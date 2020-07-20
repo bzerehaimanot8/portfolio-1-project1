@@ -89,7 +89,7 @@ rgb(148, 148, 148) */
   height: 400px;
   background-image: url('https://res.cloudinary.com/dfmeqlgua/image/upload/v1594786323/nyc1_d0gnxk.jpg');
   background-size: cover;
-background-position: center; 
+  background-position: center;
 
 }
 
@@ -123,13 +123,13 @@ h3 {
   color: white;
 }
 
-h4 {
+.innerbox p {
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   width: 90%;
-  margin: 10px 10px 10px 10px;
+  margin: 5px 10px 0px 10px;
   padding: 10px;
-  /* text-align: initial; */
+  text-align: center;
 }
 
 h5 {
@@ -170,7 +170,7 @@ img {
 }
 
 
- /* img:hover {
+/* img:hover {
   width: 280px;
   height 170px;
 } */
@@ -532,7 +532,7 @@ textarea:hover::focus:-ms-placeholder {
 
   height: 500px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   /* width: 95%;
