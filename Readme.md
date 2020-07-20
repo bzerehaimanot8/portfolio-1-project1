@@ -1,112 +1,53 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit 1 Project - Build a portfolio site
+# project-1-portfolio
+First GA project.
 
-#### Overview
+# Project-Description
 
-This project will give you a chance to use the skills we've learned in class to create a site that highlights the skills and projects you'll be working on in SEIR. You'll get a chance to use JavaScript to tackle interactions such as an image slider, a responsive hamburger menu, and quotes that fade in and out on a timer.
+My first project for the General Assembly Software Engineering Immersive will consist of a personal portfolio website showcasing my skills and projects as a full stack developer. This website will be essential for when I begin to look for employment, collaborators on projects or begin to promote myself as a freelancer and display the value I bring to the table. With that said, nothing displays your skills and experience more than a fundamentally sound and functioning website, which ultimately will be my largest priority with this project.
 
-Make sure to customize the design and content of the website to make it your own.
+At the bare minimum, my website will consist of three sections, the first being a brief biography of who I am and what my intentions are, then a display of the different projects I’ve worked on and lastly a contact form for visitors would like to reach out to me. If time permits, I will also include a testimonial section where I will display testimonies from people I’ve worked with in the past.
 
-You will be working individually for this project, but we'll be guiding you throughout the process and helping as you go.
+ When it comes to the layout of my website, I will be relying heavily on CSS flexbox and grid concepts to strategically place content on the browser where it makes most sense. This approach will be especially important because my website will be responsive to different display sizes, especially mobile. As far as the interactivity aspect of my website, I will be using Javascript to build an image slider for my projects section, a responsive hamburger menu that will help a user navigate my site and various mouse interactivity effects. The final version of my website will be deployed and accessible online either via Github Pages or Surge.
 
----
+# Wireframes
 
-#### Requirements
+Mobile -https://res.cloudinary.com/dfmeqlgua/image/upload/v1594612044/mobilewireframe_zi1mfl.png
+Tablet -https://res.cloudinary.com/dfmeqlgua/image/upload/v1594612061/tabletwireframe_ibht6s.png
+Desktop -https://res.cloudinary.com/dfmeqlgua/image/upload/v1594612077/desktopwireframe_tyzkxb.png
 
-Your work must:
+# Time/Priority Matrix
 
-- Use semantic markup for HTML and CSS, adhering to best practices.
-- Use CSS GRID to create a multi-column layout.
-- Use Flexbox for content.
-- Must be mobile mobile first, then tablet and desktop responsive.
-- Must pull in projects via API call from google sheet. 
-- Be deployed and accessible online either via Github Pages or Surge. 
----
+link -https://res.cloudinary.com/dfmeqlgua/image/upload/v1594612369/time_prioritymatrix_csbfao.jpg
 
-#### Necessary Deliverables
+# MVP/Post-MVP 
 
-- An About, Projects, Contact form (Google)
-- Site must be created using a "mobile first" approach. 
-- A Git repository, hosted on your personal GitHub, that includes a link to your hosted site. Site URL should be in the form of githubusername.github.io. 
-- Repo must contain frequent commits (min 15+) dating back to the beginning of the project.
-- An updated project workshheet will all sections filled out accordingly. 
-- An in-class demo of the site that shows off the interactions you worked on.
-- A mobile nav that expands and collapses when a user clicks on the hamburger icon.
+link -https://res.cloudinary.com/dfmeqlgua/image/upload/v1594612250/mvp_postmvp_xxb6mr.png
 
-## Portfolio Samples
+# Functional-Components
 
-Check out portfoliios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
+link -https://res.cloudinary.com/dfmeqlgua/image/upload/v1595265239/Screen_Shot_2020-07-20_at_1.09.07_PM_gsl5to.png
 
- - [denisechandler.com](http://www.denisechandler.com/)
- 
- - [mattfarely.ca](http://mattfarley.ca/)
+# Additional Libraries
+-Jquery
+-Google Fonts
 
- - [sebkay.com](http://sebkay.com/)
- 
- ### Previous SEI Students
+# Code Snippet
 
- - [helloaileen.com](http://helloaileen.com)
- 
- - [eloise-ress-barrow.surge.sh/](http://eloise-ress-barrow.surge.sh/)
+This first code snippet is of the JS that allowed me to toggle between classes to have sequential parts to my hamburger menu. Toggling between classes was a new concept for me and i'm excited to further explore with it
+link -https://res.cloudinary.com/dfmeqlgua/image/upload/v1595265270/Screen_Shot_2020-07-20_at_1.12.28_PM_vnjock.png
 
- - [lianapenn.com](https://www.lianapenn.com/)
- 
- - [robertdiscipio.surge.sh/](http://robertdiscipio.surge.sh/)
- 
- - [andrewhollingworth.com/](http://andrewhollingworth.com/)
- 
- - [jessicalandzberg.github.io/](https://jessicalandzberg.github.io/Unit_1_Project/#myJourney0)
- 
- - [ga profiles](https://dietoself86.github.io/project-1-portfolio/)
+This next code snippet is of the media queries I did for my grid layouts. The reason I'm proud of this is because I ran into some obstacles which made figuring it out that much more rewarding
+link -https://res.cloudinary.com/dfmeqlgua/image/upload/v1595265270/Screen_Shot_2020-07-20_at_9.42.49_AM_dpi1pz.png
 
+# Issues and Resolutions
 
-### Finding Good Portfolio Sites To Emulate - 10 min
+Here's a list of various issues I've encountered and resolutions I've came up with...
 
-Search and compare at least 3 profile web sites. Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site. 
+issue: hamburger menu crunching to close to my "welcome" banner
+resolution: putting borders around everything and seeing that one of my opaque div elements was taking up all the space that was needed for my hamburger menu
 
-Link To Site  | One Thing I'd Like To Incorporate | Initial Research On That Item
-| ------------- | ------------- | ------------- |
-| [http://www.denisechandler.com/](http://www.denisechandler.com/)| initial animation\drawing on page load
-|[jkeohan.com](jkeohan.com) | mouseover on a project triggers animations |
-| [http://mattfarley.ca/](http://mattfarley.ca/) |  layout of the projects
+issue: my projects title within my projects container wouldnt sit in the top center like it was suppose to because the structure would get complicated when i incorporated grid layouts across different screen sizes
+resolution: taking my "projects" title out of the container that consisted of all my projects and created a separate div for my projects title alone to sit on top of my projects container
 
-#### Starter Code
-
-No starter code has been provided for this project, as you will be building your site from scratch. As an option, you can use the [HTML5 Boilerplate](https://html5boilerplate.com/) as a template to get started.
-
----
-#### Suggested Ways to Get Started
-
-- Don't hesitate to write throwaway code to solve short-term problems.
-- Read the documentation for whatever technologies you use. **Most of the time — but not always — there is a tutorial you can follow, and learning to read documentation is crucial to your success as a developer.**
-- **Write pseudocode before you write any JavaScript code.** Planning out and thinking through interactions for a website is an important step that will save you time and effort when you start actually coding.
-- Do not simply copy and paste code that you find online! It is OK (and highly encouraged) to use resources like Stack Overflow when thinking through interactions, but use these sites as a guide and then write the code on your own.
-
-#### Front End Frameworks
-Try exploring these front end frameworks:
-
-- [https://materializecss.com/](https://materializecss.com/)
-- [https://getbootstrap.com/](https://getbootstrap.com/)
-
----
-#### Hungry For More?
-If you're looking for an extra challenge, try tackling some of the tasks below:
-
-* Add validation to the contact form to make sure the user has filled out all required fields before submitting.
-* Add a skills section featuring skills you have/will have learned in the class.
-* Add a carousel 
-
----
-
-#### Additional Resources
-- Joe's [FEWD Trello Board](https://trello.com/b/yqrvugBk/lectures)
-- Joe's YouTube 3 Part Sereis on [jQuery Top Nav Animation On Scroll](https://www.youtube.com/watch?v=mRsF-a3qFZE&t=176s)
-
-
-#### Need More Review?
-- HTML/CSS
-	- [Practice CSS Selectors with CSS Diner](https://flukeout.github.io/)
-	- [Flexbox Froggy](http://flexboxfroggy.com/)
-
-- JavaScript
-	- [JavaScript Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)
----
+issue: navigation menu to appear the way it was intended across different screen sizes
+resolution: figuring out exactly where i needed to implement display:none and where not to
