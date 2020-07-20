@@ -1,13 +1,17 @@
 console.log($)
 
 const url = 'https://spreadsheets.google.com/feeds/list/1mJzZYi_NMo88Yjd___rRk1MQifOsgC_QPI900gZXxPI/od6/public/values?alt=json'
+/* where js handles http request and retrieves the data from the url*/
 
 fetch(url)
+
+/* the then method waits for this data to be retrieved then pulls just the json string out and coverts it into a js object using the .json method*/
+
     .then(response => response.json())
     .then(data => {
-        // console.log('data:',
-        //     data)
-        console.log(data.feed.entry)
+
+        /* use data.feed.entry to locate the array that has our project entries, then we use the map method to return a new array for our key values*/
+    
         const projects = data.feed.entry.map(entry => {
             return {
                 title: entry.gsx$title.$t,
@@ -15,17 +19,14 @@ fetch(url)
                 description: entry.gsx$description.$t,
                 url: entry.gsx$url.$t
             }
-
-
         })
-        app(projects)
 
-
+        app(projects) /* invokes the application with projects array as arguments*/
     })
-    // console.log(projects)
+    
 const app = (data) => {
-    console.log('app is running')
-    console.log(data)
+  
+/* all the application logic follows, in this case creating the structure of each div that each our projects will go in and appending it to the container it is assigned*/
 
     const createProjectElement = (project) => {
             const $div = $('<div>')
@@ -37,12 +38,16 @@ const app = (data) => {
             $('main').append($div)
             return $div
         }
-        // $('body').append(createProjectElement(data[0]))
+
+    /* making sure that each project implemented into the google sheet is appended to the container*/
+
     data.forEach(project => {
         const $projectDiv = createProjectElement(project)
         $('main').append($projectDiv)
     })
 }
+
+/* what allowed me to toggle between different classes to apply different styling conditions in the case of my hamburger menu */
 
 function onClickMenu(){
 document.getElementById("menu").classList.toggle("change");
@@ -50,27 +55,4 @@ document.getElementById("nav").classList.toggle("change");
 document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-// const $li = $('<li>'); $li.text('About Me'); $ul.prepend($li); $li.click(function() {
-//     //alert('You clicked About Me') -> test
-//     window.scrollBy(0,350)
-// });
 
-
-function scrollWin(x,y) {
-window.scrollBy(0, 500);
-}
-
-// const $contact = $('<div>')
-// ($contact).addClass('contact')
-// $('main').append($contact)
-
-// const hamburger = document.querySelector(".hamburger");
-// const navLinks = document.querySelector(".nav-links");
-// const links = document.querySelectorAll(".nav-links li");
-
-// hamburger.addEventListener("click", () => {
-//     navLinks.classList.toggle("open");
-//     links.forEach(link => {
-//         link.classList.toggle("fade");
-//     });
-// });
