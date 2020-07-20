@@ -2,10 +2,12 @@
   /* border: 1px solid black; */
 }
 
+/* enables smooth scrolling effect */
 html {
   scroll-behavior: smooth;
 }
 
+/* created separate div for the heading of the projects section because it became complicated once i implemented the grid layout */
 .title {
   display: flex;
   justify-content: center;
@@ -18,6 +20,7 @@ html {
   width: 100%;
 }
 
+
 h1 {
   font-size: 17px;
 }
@@ -25,26 +28,19 @@ h1 {
 body {
   font-family: 'Lato', sans-serif;
   background: #e2dedb;
-  /* background-color: grey;
-  font-family: sans-serif; */
   height: 1750px;
   position: relative;
   min-height: 100vh;
   margin: 10px 10px;
 }
 
-/* rgba(122, 112, 112, 0.603)
-rgb(148, 148, 148) */
-
-
+/* header with navigation/hamburger menu */
 .container1 {
   background-color: rgb(2, 55, 90);
   height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-
-  /* margin: auto; */
 }
 
 #biz {
@@ -55,22 +51,7 @@ rgb(148, 148, 148) */
   opacity: 0;
 }
 
-/* nav {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-} */
-
-/* .burger-menu {
-  height: 50px;
-} */
-
+/* div containing the "welcome" banner*/
 .a {
   color: white;
   height: 50px;
@@ -80,6 +61,7 @@ rgb(148, 148, 148) */
   margin: 8px;
 }
 
+/* background photo w/ my name and aspiring job title*/
 .container2 {
   display: flex;
   justify-content: center;
