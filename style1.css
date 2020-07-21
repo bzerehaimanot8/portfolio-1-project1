@@ -310,8 +310,8 @@ main {
 
 /* what allows the menu background to grow into a circle in the way it does */
 .change-bg {
-  width: 290px;
-  height: 290px;
+  width: 390px;
+  height: 390px;
   transform: translate(60%, -30%);
 }
 
