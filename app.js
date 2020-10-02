@@ -49,10 +49,10 @@ const app = (data) => {
         $div1.append($('<a>').attr('href', project.frontend).text('frontend').addClass('front'))
         $div.append($div1)
 
-        const $div2 = $('<div>').addClass('overlay')
-        const $div3 = $('<div>').addClass('text').text('Hello World')
-        $div2.append($div3)
-        $div.append($div2)
+        // const $div2 = $('<div>').addClass('overlay')
+        // const $div3 = $('<div>').addClass('text').text('Hello World')
+        // $div2.append($div3)
+        // $div.append($div2)
         $('main').append($div)
 
 
