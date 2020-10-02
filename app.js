@@ -36,10 +36,17 @@ const app = (data) => {
         $div.append($('<h2>').text(project.title))
         $div.append($('<p>').text(project.description))
         $div.append($('<img>').attr('src', project.image))
-        $div.append($('<a>').attr('href', project.url).text('deployed site'))
-        $div.append($('<a>').attr('href', project.backend).text('backend repo'))
-        $div.append($('<a>').attr('href', project.frontend).text('frontend repo'))
+
+        // $div.append($('<a>').attr('href', project.url).text('deployed site'))
+        // $div.append($('<a>').attr('href', project.backend).text('backend'))
+        // $div.append($('<a>').attr('href', project.frontend).text('frontend'))
         $('main').append($div)
+        const $div1 = $('<div>')
+        $div1.addClass('links')
+        $div1.append($('<a>').attr('href', project.url).text('deployed site  |  '))
+        $div1.append($('<a>').attr('href', project.backend).text('backend  |  '))
+        $div1.append($('<a>').attr('href', project.frontend).text('frontend'))
+        $div.append($div1)
         return $div
     }
 
