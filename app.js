@@ -35,18 +35,27 @@ const app = (data) => {
         $div.addClass('project')
         $div.append($('<h2>').text(project.title))
         $div.append($('<p>').text(project.description))
-        $div.append($('<img>').attr('src', project.image))
+        $div.append($('<img>').attr('src', project.image).addClass('projectimage'))
 
         // $div.append($('<a>').attr('href', project.url).text('deployed site'))
         // $div.append($('<a>').attr('href', project.backend).text('backend'))
         // $div.append($('<a>').attr('href', project.frontend).text('frontend'))
-        $('main').append($div)
+        // $('main').append($div)
+
         const $div1 = $('<div>')
         $div1.addClass('links')
-        $div1.append($('<a>').attr('href', project.url).text('deployed site  |  '))
-        $div1.append($('<a>').attr('href', project.backend).text('backend  |  '))
-        $div1.append($('<a>').attr('href', project.frontend).text('frontend'))
+        $div1.append($('<a>').attr('href', project.url).text('deployed site  |  ').addClass('live'))
+        $div1.append($('<a>').attr('href', project.backend).text('backend  |  ').addClass('back'))
+        $div1.append($('<a>').attr('href', project.frontend).text('frontend').addClass('front'))
         $div.append($div1)
+
+        const $div2 = $('<div>').addClass('overlay')
+        const $div3 = $('<div>').addClass('text').text('Hello World')
+        $div2.append($div3)
+        $div.append($div2)
+        $('main').append($div)
+
+
         return $div
     }
 

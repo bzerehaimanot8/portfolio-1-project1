@@ -28,7 +28,7 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 10px 10px;
-/* width: 100%; */
+  /* width: 100%; */
 }
 
 /* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced. rgb(2, 55, 90) */
@@ -77,7 +77,7 @@ body {
   justify-content: flex-start;
   margin: 8px;
   /* position: fixed; */
-   /* width: 100%;  */
+  /* width: 100%;  */
 }
 
 /* background photo w/ my name and aspiring job title*/
@@ -199,6 +199,51 @@ main {
   flex-direction: column;
 }
 
+.projectimage:hover {
+  filter: brightness(.6);
+}
+
+.live:hover {
+  font-weight: bold;
+}
+
+.back:hover {
+  font-weight: bold;
+}
+
+.front:hover {
+  font-weight: bold;
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} */
+
+/* .overlay:hover  {
+  opacity: 1;
+} */
+
+/* .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
 
 /*  lines 186-284 involve code surrounding my hamburger menu, which is heavily influenced by what i learned my Abarna, a coder on youtube */
 
@@ -271,7 +316,7 @@ main {
 
 /* what allowed my nav menu items to have that transition effect when in hamburger menu mode and also what allowed my nav items to disappear when on mobile view */
 
- .nav {
+.nav {
   padding: 0;
   margin: 8px;
   transition: 0.3s ease;
@@ -280,7 +325,7 @@ main {
   width: 250px;
   display: none;
   /* position: fixed;  */
-} 
+}
 
 
 
@@ -328,8 +373,8 @@ main {
 }
 
 .music {
-width: 100%;
-height: 80px;
+  width: 100%;
+  height: 80px;
 
 }
 
@@ -597,16 +642,16 @@ textarea:hover {
 
 .experiences-education {
   background-color: white;
-margin: 10px 0px;
-display: flex;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 
 }
 
 .experiences-education hr {
-width: 500px;
+  width: 500px;
 
 
 }
@@ -614,53 +659,53 @@ width: 500px;
 
 
 .experiences {
-padding: 10px;
-/* display: flex;
+  padding: 10px;
+  /* display: flex;
 justify-content: space-around; */
 }
 
 .header h1 {
-display: flex;
-justify-content: center;
-font-weight: 10;
-font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 10;
+  font-size: 20px;
 }
 
 /* FIRST EXPERIENCE */
 
 .first-experience {
-display: flex;
-justify-content: space-around;
-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
 }
 
 .first-image {
-background-image: url('https://ga-core.s3.amazonaws.com/cms/files/files/000/000/886/original/ga-logo-gear.png');
-background-size: cover;
-height: 60px;
-width: 60px;
+  background-image: url('https://ga-core.s3.amazonaws.com/cms/files/files/000/000/886/original/ga-logo-gear.png');
+  background-size: cover;
+  height: 60px;
+  width: 60px;
 
 }
 
-.first-description  {
-width: 75%;
+.first-description {
+  width: 75%;
 }
 
 .first-description p {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .first-description h2 {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .first-description h4 {
-color: black;
-font-weight: 10;
-margin: 5px 0px;
-font-size: 12px;
+  color: black;
+  font-weight: 10;
+  margin: 5px 0px;
+  font-size: 12px;
 }
 
 
@@ -668,47 +713,47 @@ font-size: 12px;
 /* SECOND EXPERIENCE */
 
 .second-experience {
-display: flex;
-justify-content: space-around;
-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
 }
 
 .second-image {
-background-image: url('https://www.indusbusinessjournal.com/wp-content/uploads/2018/11/Oracle.jpg');
-background-size: cover;
-height: 50px;
-width: 50px;
+  background-image: url('https://www.indusbusinessjournal.com/wp-content/uploads/2018/11/Oracle.jpg');
+  background-size: cover;
+  height: 50px;
+  width: 50px;
 
 }
 
 .second-description {
-width: 75%;
+  width: 75%;
 }
 
 .second-description p {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .second-description h2 {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .second-description h4 {
-color: black;
-font-weight: 10;
-margin: 5px 0px;
-font-size: 12px;
+  color: black;
+  font-weight: 10;
+  margin: 5px 0px;
+  font-size: 12px;
 }
 
 /* EDUCATION */
 
 
 .education {
-background-color: white;
-padding: 10px
-/* display: flex;
+  background-color: white;
+  padding: 10px
+    /* display: flex;
 flex-direction: column;
 justify-content: space-around; */
 }
@@ -721,76 +766,76 @@ justify-content: space-around; */
 /* FIRST EDUCATION */
 
 .first-education {
-display: flex;
-justify-content: space-around;
-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
 }
 
 .first-education-image {
-background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReooAI7l6xyTsZzS384YJLKRQFhHh3YDZ09A&usqp=CAU');
-background-size: cover;
-height: 50px;
-width: 50px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReooAI7l6xyTsZzS384YJLKRQFhHh3YDZ09A&usqp=CAU');
+  background-size: cover;
+  height: 50px;
+  width: 50px;
 
 }
 
 .first-education-description {
-width: 75%;
+  width: 75%;
 }
 
 
 .first-education-description p {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .first-education-description h2 {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .first-education-description h4 {
-color: black;
-font-weight: 10;
-margin: 5px 0px;
-font-size: 12px;
+  color: black;
+  font-weight: 10;
+  margin: 5px 0px;
+  font-size: 12px;
 }
 
 /* SECOND EDUCATION */
 
 .second-education {
-display: flex;
-justify-content: space-around;
-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
 }
 
 .second-education-image {
-background-image: url('https://www.laguardia.edu/redesign-2015/images/logo-laguardia-community-college.svg');
-background-size: cover;
-height: 60px;
-width: 50px;
+  background-image: url('https://www.laguardia.edu/redesign-2015/images/logo-laguardia-community-college.svg');
+  background-size: cover;
+  height: 60px;
+  width: 50px;
 
 }
 
 .second-education-description {
-width: 75%;
+  width: 75%;
 }
 
 .second-education-description p {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .second-education-description h2 {
-color: black;
-margin: 5px 0px;
+  color: black;
+  margin: 5px 0px;
 }
 
 .second-education-description h4 {
-color: black;
-font-weight: 10;
-margin: 5px 0px;
-font-size: 12px;
+  color: black;
+  font-weight: 10;
+  margin: 5px 0px;
+  font-size: 12px;
 }
 
 
