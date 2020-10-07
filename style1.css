@@ -176,7 +176,7 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgb(148, 148, 148);
+  background-color: rgb(8, 44, 66);
 }
 
 /* the div containing my projects section. used flexbox so that each project is stacked on mobile view */
@@ -215,7 +215,7 @@ main {
   font-weight: bold;
 }
 
-/* .overlay {
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -228,11 +228,11 @@ main {
   background-color: #008CBA;
 } */
 
-/* .overlay:hover  {
+ .overlay:hover  {
   opacity: 1;
-} */
+} 
 
-/* .text {
+.text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -242,7 +242,7 @@ main {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-} */
+} 
 
 
 /*  lines 186-284 involve code surrounding my hamburger menu, which is heavily influenced by what i learned my Abarna, a coder on youtube */
