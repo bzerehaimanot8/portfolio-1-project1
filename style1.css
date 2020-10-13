@@ -235,11 +235,11 @@ main {
   background-color: #008CBA;
 } */
 
-.overlay:hover {
+/* .overlay:hover {
   opacity: 1;
-}
+} */
 
-*/ .text {
+ /* .text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -249,7 +249,7 @@ main {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 
 
 /*  lines 186-284 involve code surrounding my hamburger menu, which is heavily influenced by what i learned my Abarna, a coder on youtube */
