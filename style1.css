@@ -32,7 +32,7 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 10px 10px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced. rgb(2, 55, 90) */
