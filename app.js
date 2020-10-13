@@ -50,7 +50,7 @@ const app = (data) => {
         $div.append($div1)
 
         const $div2 = $('<div>').addClass('overlay')
-        const $div3 = $('<div>').addClass('text').text('Hello World')
+        const $div3 = $('<div>').addClass('text').text('')
         $div2.append($div3)
         $div.append($div2)
         $('main').append($div)

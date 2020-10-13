@@ -1,3 +1,7 @@
+* {
+  border: 1px solid yellow
+}
+
 /* enables smooth scrolling effect */
 html {
   scroll-behavior: smooth;
@@ -28,7 +32,7 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 10px 10px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 /* header with navigation/hamburger menu. used flex and space in between to keep menu items equally spaced. rgb(2, 55, 90) */
@@ -196,7 +200,10 @@ main {
 /* the class containing all the divs each project resides in  */
 .project {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  width: 260px;
+  height: 152px;
 }
 
 .projectimage:hover {
@@ -215,7 +222,7 @@ main {
   font-weight: bold;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -228,11 +235,11 @@ main {
   background-color: #008CBA;
 } */
 
- .overlay:hover  {
+.overlay:hover {
   opacity: 1;
-} 
+}
 
-.text {
+*/ .text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -242,7 +249,7 @@ main {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-} 
+}
 
 
 /*  lines 186-284 involve code surrounding my hamburger menu, which is heavily influenced by what i learned my Abarna, a coder on youtube */
