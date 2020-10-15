@@ -114,11 +114,21 @@ body {
   color: white;
   text-align: center;
   padding: 0;
-  height: 50px;
+  height: 90px;
+  margin: 10px;
+ background-color: rgb(0, 0, 0, .55);
+border-radius: 5px;
+/* width: 200px; */
+}
+
+.nameandposition hr {
+  border: 1px solid silver;
+  width: 274px;
+  height: 1px;
 }
 
 /* styling of all horizontal lines following major headings on my page*/
-hr {
+  hr {
   border: 1px solid silver;
   width: 274px;
   height: 1px;
@@ -143,7 +153,10 @@ h3 {
 }
 
 h5 {
-  font-size: 13px;
+  font-size: 20px;
+  margin: 10px 0px;
+  /* width: 200px;
+  background-color: rgb(0, 0, 0, .4); */
 }
 
 h2 {
@@ -273,6 +286,8 @@ main {
 .hvrbox .hvrbox-text {
   text-align: center;
   font-size: 15px;
+  font: arial;
+  font-style: italic;
   color: white;
   display: inline-block;
   position: absolute;
@@ -1007,7 +1022,7 @@ justify-content: space-around; */
     height: 600px;
   }
 
-.details {
+  .details {
     visibility: hidden;
   }
 
