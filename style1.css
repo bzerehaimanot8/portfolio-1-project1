@@ -116,9 +116,9 @@ body {
   padding: 0;
   height: 90px;
   margin: 10px;
- background-color: rgb(0, 0, 0, .35);
-border-radius: 5px;
-/* width: 200px; */
+  background-color: rgb(0, 0, 0, .35);
+  border-radius: 5px;
+  /* width: 200px; */
 }
 
 .nameandposition hr {
@@ -128,7 +128,7 @@ border-radius: 5px;
 }
 
 /* styling of all horizontal lines following major headings on my page*/
-  hr {
+hr {
   border: 1px solid silver;
   width: 274px;
   height: 1px;
@@ -742,7 +742,7 @@ justify-content: space-around; */
   display: flex;
   justify-content: center;
   font-weight: 10;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 /* FIRST EXPERIENCE */
@@ -768,18 +768,21 @@ justify-content: space-around; */
 .first-description p {
   color: black;
   margin: 5px 0px;
+  font-size: 12px;
 }
 
 .first-description h2 {
   color: black;
   margin: 5px 0px;
+  font-size: 18px;
+
 }
 
 .first-description h4 {
   color: black;
   font-weight: 10;
   margin: 5px 0px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 
@@ -807,18 +810,20 @@ justify-content: space-around; */
 .second-description p {
   color: black;
   margin: 5px 0px;
+  font-size: 12px;
 }
 
 .second-description h2 {
   color: black;
   margin: 5px 0px;
+  font-size: 18px;
 }
 
 .second-description h4 {
   color: black;
   font-weight: 10;
   margin: 5px 0px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* EDUCATION */
@@ -861,18 +866,20 @@ justify-content: space-around; */
 .first-education-description p {
   color: black;
   margin: 5px 0px;
+  font-size: 12px;
 }
 
 .first-education-description h2 {
   color: black;
   margin: 5px 0px;
+  font-size: 18px;
 }
 
 .first-education-description h4 {
   color: black;
   font-weight: 10;
   margin: 5px 0px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* SECOND EDUCATION */
@@ -898,18 +905,20 @@ justify-content: space-around; */
 .second-education-description p {
   color: black;
   margin: 5px 0px;
+  font-size: 12px;
 }
 
 .second-education-description h2 {
   color: black;
   margin: 5px 0px;
+  font-size: 18px;
 }
 
 .second-education-description h4 {
   color: black;
   font-weight: 10;
   margin: 5px 0px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 
