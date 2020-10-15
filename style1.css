@@ -465,17 +465,31 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(148, 148, 148);
+  background-color: rgb(8, 44, 66);
 }
 
 /* scroll up button the bottom of the page */
 button {
   background-color: rgb(8, 44, 66);
-  border-radius: 10px;
+  
 }
 
-button a {
-  text-decoration: none;
+.footer {
+  background-color: rgb(8, 44, 66);
+  /* margin: auto; */
+display: flex;
+justify-content: center;
+flex-direction: column;
+height: 150px;
+}
+
+.copyright {
+  color: white;
+display: flex;
+font-size: 14px;
+justify-content: center;
+margin: 0px 0px 20px 0px
+
 }
 
 /* what allows the social icons on the bottom of the page to be spaced out the way they are and look the way they do*/
@@ -484,7 +498,7 @@ button a {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(8, 44, 66);
-  height: 50px;
+  height: 150px;
   border-radius: 2px;
   width: 100%;
   margin: 0px;
@@ -507,7 +521,7 @@ button a {
   width: 35px;
   background-color: white;
   border-radius: 25px;
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5c113af689c172b373cd9bc7/1549299670080-1Z27AW8E5KNOTLZ06123/ke17ZwdGBToddI8pDm48kMlgjIENt3llSql74WciU1xZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxKT6jBZwykvsTCjPHkC70BQS_7ex3RdZUdr_tEfw2S56eMPmD0AO5gb6Z0ZDPQ5ZA/linkedIn_PNG32.png");
+  background-image: url("https://jasonbgraham.com/wp-content/uploads/2020/04/jason-b-graham-linkedin-icon-square-0073b1-featured-image.png");
   background-size: cover;
 }
 
@@ -742,8 +756,10 @@ textarea:hover {
 
 .experiences {
   padding: 10px;
-  /* display: flex;
-justify-content: space-around; */
+
+  display: flex;
+justify-content: space-around;
+flex-direction: column;
 }
 
 .header h1 {
