@@ -1007,5 +1007,8 @@ justify-content: space-around; */
     height: 600px;
   }
 
+.details {
+    visibility: hidden;
+  }
 
 }
