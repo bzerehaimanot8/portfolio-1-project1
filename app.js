@@ -34,8 +34,15 @@ const app = (data) => {
         const $div = $('<div>')
         $div.addClass('project')
         $div.append($('<h2>').text(project.title))
-        $div.append($('<p>').text(project.description))
-        $div.append($('<img>').attr('src', project.image).addClass('projectimage'))
+        // $div.append($('<p>').text(project.description))
+        // $div.append($('<img>').attr('src', project.image).addClass('projectimage'))
+
+        const $div2 = $('<div>').addClass('hvrbox')
+        $div2.prepend($('<img>').attr('src', project.image).addClass('hvrbox-layer_bottom'))
+        const $div3 = $('<div>').addClass('hvrbox-layer_top')
+        $div3.append($('<div>').addClass('hvrbox-text').text(project.description))
+        $div2.append($div3)
+        $div.append($div2)
 
         // $div.append($('<a>').attr('href', project.url).text('deployed site'))
         // $div.append($('<a>').attr('href', project.backend).text('backend'))
