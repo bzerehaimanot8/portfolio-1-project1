@@ -140,12 +140,15 @@ h3 {
   color: white;
 }
 
+
+
+
 /* the styling of the paragraph tag inside the about me section */
 .innerbox p {
   text-indent: 50px;
   ;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   width: 90%;
   margin: 5px 10px 0px 10px;
   /* padding: 10px; */
@@ -187,13 +190,18 @@ a {
 
 /* container with my about me elements*/
 .container3 {
-  height: 220px;
+  height: 260px;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: rgb(8, 44, 66);
+}
+
+.container3 h3 {
+  margin: 5px;
+
 }
 
 /* the div containing my projects section. used flexbox so that each project is stacked on mobile view */
@@ -287,7 +295,6 @@ main {
   text-align: center;
   font-size: 15px;
   font: arial;
-  font-style: italic;
   color: white;
   display: inline-block;
   position: absolute;
@@ -773,7 +780,7 @@ justify-content: space-around; */
 
 .first-description h2 {
   color: black;
-  margin: 5px 0px;
+  margin: 0px 0px 5px 0px;
   font-size: 18px;
 
 }
@@ -815,7 +822,7 @@ justify-content: space-around; */
 
 .second-description h2 {
   color: black;
-  margin: 5px 0px;
+  margin: 0px 0px 5px 0px;
   font-size: 18px;
 }
 
@@ -871,7 +878,7 @@ justify-content: space-around; */
 
 .first-education-description h2 {
   color: black;
-  margin: 5px 0px;
+  margin: 0px 0px 5px 0px;
   font-size: 18px;
 }
 
@@ -900,11 +907,12 @@ justify-content: space-around; */
 
 .second-education-description {
   width: 75%;
+
 }
 
 .second-education-description p {
   color: black;
-  margin: 5px 0px;
+  margin: 0px 0px 5px 0px;
   font-size: 12px;
 }
 
@@ -944,6 +952,30 @@ justify-content: space-around; */
     justify-content: space-between;
   }
 
+.experiences-education {
+  height: 1000px;
+}
+
+.first-experience {
+  height: 180px;
+}
+
+.second-experience {
+  height: 180px;
+}
+
+.first-education {
+  height: 210px;
+}
+
+.second-education {
+  height: 210px;
+}
+
+  .container3 {
+    height: 230px;
+  }
+
   #menu {
     display: none;
   }
@@ -970,6 +1002,30 @@ justify-content: space-around; */
 
 /* the media query conditions for screen sizes between 680 and 980 px, which concerns the grid layout in the projects section*/
 @media (min-width: 680px) {
+
+  .container3 {
+    height: 215px;
+  }
+
+.experiences-education {
+  height: 900px;
+}
+
+.first-experience {
+  height: 160px;
+}
+
+.second-experience {
+  height: 160px;
+}
+
+.first-education {
+  height: 190px;
+}
+
+.second-education {
+  height: 190px;
+}
 
   #proj {
     display: grid;
@@ -1009,6 +1065,30 @@ justify-content: space-around; */
 /* the media query conditions for screen sizes above 980px, which also concerns the grid layout in the projects sections*/
 @media (min-width: 980px) {
 
+   .container3 {
+    height: 205px;
+  }
+
+.experiences-education {
+  height: 800px;
+}
+
+.first-experience {
+  height: 140px;
+}
+
+.second-experience {
+  height: 140px;
+}
+
+.first-education {
+  height: 170px;
+}
+
+.second-education {
+  height: 170px;
+}
+
   #proj {
     display: grid;
     grid-template-rows: repeat(2, 0fr);
@@ -1030,6 +1110,26 @@ justify-content: space-around; */
     grid-template-columns: repeat(3, 0fr);
     height: 600px;
   }
+
+.experiences-education {
+  height: 750px;
+}
+
+.first-experience {
+  height: 120px;
+}
+
+.second-experience {
+  height: 120px;
+}
+
+.first-education {
+  height: 150px;
+}
+
+.second-education {
+  height: 150px;
+}
 
   .details {
     visibility: hidden;
