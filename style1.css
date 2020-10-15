@@ -717,10 +717,10 @@ textarea:hover {
   background-color: white;
   margin: 10px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   width: 100%;
-  height: 680px;
+  height: 1000px;
 
 }
 
@@ -750,7 +750,7 @@ justify-content: space-around; */
 .first-experience {
   display: flex;
   justify-content: space-around;
-  height: 125px;
+  height: 200px;
 }
 
 .first-image {
@@ -792,7 +792,7 @@ justify-content: space-around; */
 .second-experience {
   display: flex;
   justify-content: space-around;
-  height: 125px;
+  height: 200px;
 }
 
 .second-image {
@@ -847,7 +847,7 @@ justify-content: space-around; */
 .first-education {
   display: flex;
   justify-content: space-around;
-  height: 125px;
+  height: 230px;
 }
 
 .first-education-image {
@@ -887,7 +887,7 @@ justify-content: space-around; */
 .second-education {
   display: flex;
   justify-content: space-around;
-  height: 125px;
+  height: 230px;
 }
 
 .second-education-image {
