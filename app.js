@@ -34,7 +34,7 @@ const app = (data) => {
         const $div = $('<div>')
         $div.addClass('project')
         $div.append($('<h2>').text(project.title))
-        // $div.append($('<p>').text(project.description))
+        $div.append($('<p>').addClass('details').text(project.description))
         // $div.append($('<img>').attr('src', project.image).addClass('projectimage'))
 
         const $div2 = $('<div>').addClass('hvrbox')

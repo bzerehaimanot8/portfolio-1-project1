@@ -222,7 +222,9 @@ main {
   font-weight: bold;
 }
 
-
+.details {
+  visibility: hidden;
+}
 
 .hvrbox,
 .hvrbox * {
@@ -292,7 +294,6 @@ main {
   padding-top: 2px;
   display: none;
   height: 150px;
-  pointer-events: fine;
 }
 
 .hvrbox.active .hvrbox-text_mobile {
@@ -901,6 +902,17 @@ justify-content: space-around; */
 
 /* ***************************************************************** */
 
+
+@media (min-width: 0px) {
+
+  .details {
+    visibility: visible;
+  }
+
+}
+
+
+
 /* the media query conditions set for a screen size between 460 and 680 px" */
 @media (min-width: 460px) {
   .container1 {
@@ -926,6 +938,9 @@ justify-content: space-around; */
     width: 270px;
   }
 
+  .details {
+    visibility: visible;
+  }
 
 }
 
@@ -943,6 +958,10 @@ justify-content: space-around; */
   .project {
     height: 300px;
     width: 330;
+  }
+
+  .details {
+    visibility: visible;
   }
 
   /* .container1,
@@ -972,5 +991,21 @@ justify-content: space-around; */
     grid-template-columns: repeat(3, 0fr);
     height: 600px;
   }
+
+  .details {
+    visibility: visible;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  #proj {
+    display: grid;
+    grid-template-rows: repeat(2, 0fr);
+    grid-template-columns: repeat(3, 0fr);
+    height: 600px;
+  }
+
 
 }
