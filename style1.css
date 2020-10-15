@@ -22,7 +22,8 @@ html {
 
 /* name and projects title*/
 h1 {
-  font-size: 17px;
+  font-size: 23px;
+  margin: 15px 0px 0px 0px;
 }
 
 body {
@@ -136,7 +137,7 @@ hr {
 
 h3 {
   text-align: center;
-  font-size: 17px;
+  font-size: 23px;
   color: white;
 }
 
@@ -200,7 +201,7 @@ a {
 }
 
 .container3 h3 {
-  margin: 5px;
+  margin: 15px 0px 0px 0px;
 
 }
 
@@ -379,7 +380,7 @@ main {
 .nav li a {
   color: #fff;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13.5px;
 }
 
 /* what allows my nav menu items to turn bold when hovered my the mouse */
@@ -750,6 +751,7 @@ justify-content: space-around; */
   justify-content: center;
   font-weight: 10;
   font-size: 23px;
+  margin: 15px 0px 0px 0px;
 }
 
 /* FIRST EXPERIENCE */
@@ -836,12 +838,13 @@ justify-content: space-around; */
 /* EDUCATION */
 
 
-.education {
-  background-color: white;
-  padding: 10px
-    /* display: flex;
-flex-direction: column;
-justify-content: space-around; */
+.education h1 {
+  /* background-color: white;
+   padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  */
+margin: 5px 0px 25px 0px;
 }
 
 
@@ -952,25 +955,25 @@ justify-content: space-around; */
     justify-content: space-between;
   }
 
-.experiences-education {
-  height: 1000px;
-}
+  .experiences-education {
+    height: 1000px;
+  }
 
-.first-experience {
-  height: 180px;
-}
+  .first-experience {
+    height: 180px;
+  }
 
-.second-experience {
-  height: 180px;
-}
+  .second-experience {
+    height: 180px;
+  }
 
-.first-education {
-  height: 210px;
-}
+  .first-education {
+    height: 210px;
+  }
 
-.second-education {
-  height: 210px;
-}
+  .second-education {
+    height: 210px;
+  }
 
   .container3 {
     height: 230px;
@@ -1007,25 +1010,25 @@ justify-content: space-around; */
     height: 215px;
   }
 
-.experiences-education {
-  height: 900px;
-}
+  .experiences-education {
+    height: 900px;
+  }
 
-.first-experience {
-  height: 160px;
-}
+  .first-experience {
+    height: 160px;
+  }
 
-.second-experience {
-  height: 160px;
-}
+  .second-experience {
+    height: 160px;
+  }
 
-.first-education {
-  height: 190px;
-}
+  .first-education {
+    height: 190px;
+  }
 
-.second-education {
-  height: 190px;
-}
+  .second-education {
+    height: 190px;
+  }
 
   #proj {
     display: grid;
@@ -1065,35 +1068,35 @@ justify-content: space-around; */
 /* the media query conditions for screen sizes above 980px, which also concerns the grid layout in the projects sections*/
 @media (min-width: 980px) {
 
-   .container3 {
+  .container3 {
     height: 205px;
   }
 
-.experiences-education {
-  height: 800px;
-}
+  .experiences-education {
+    height: 800px;
+  }
 
-.first-experience {
-  height: 140px;
-}
+  .first-experience {
+    height: 140px;
+  }
 
-.second-experience {
-  height: 140px;
-}
+  .second-experience {
+    height: 140px;
+  }
 
-.first-education {
-  height: 170px;
-}
+  .first-education {
+    height: 170px;
+  }
 
-.second-education {
-  height: 170px;
-}
+  .second-education {
+    height: 170px;
+  }
 
   #proj {
     display: grid;
     grid-template-rows: repeat(2, 0fr);
     grid-template-columns: repeat(3, 0fr);
-    height: 600px;
+    height: 700px;
   }
 
   .details {
@@ -1108,28 +1111,28 @@ justify-content: space-around; */
     display: grid;
     grid-template-rows: repeat(2, 0fr);
     grid-template-columns: repeat(3, 0fr);
-    height: 600px;
+    height: 700px;
   }
 
-.experiences-education {
-  height: 750px;
-}
+  .experiences-education {
+    height: 750px;
+  }
 
-.first-experience {
-  height: 120px;
-}
+  .first-experience {
+    height: 120px;
+  }
 
-.second-experience {
-  height: 120px;
-}
+  .second-experience {
+    height: 120px;
+  }
 
-.first-education {
-  height: 150px;
-}
+  .first-education {
+    height: 150px;
+  }
 
-.second-education {
-  height: 150px;
-}
+  .second-education {
+    height: 150px;
+  }
 
   .details {
     visibility: hidden;
