@@ -51,9 +51,9 @@ const app = (data) => {
 
         const $div1 = $('<div>')
         $div1.addClass('links')
-        $div1.append($('<a>').attr('href', project.url).text('deployed site  |  ').addClass('live'))
-        $div1.append($('<a>').attr('href', project.backend).text('backend  |  ').addClass('back'))
-        $div1.append($('<a>').attr('href', project.frontend).text('frontend').addClass('front'))
+        $div1.append($('<a>').attr('href', project.url).attr('target','_blank').text('deployed site  |  ').addClass('live'))
+        $div1.append($('<a>').attr('href', project.backend).attr('target','_blank').text('backend  |  ').addClass('back'))
+        $div1.append($('<a>').attr('href', project.frontend).attr('target','_blank').text('frontend').addClass('front'))
         $div.append($div1)
 
         // const $div2 = $('<div>').addClass('overlay')
